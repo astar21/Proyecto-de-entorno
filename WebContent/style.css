@@ -2,8 +2,10 @@
 html{
 height:100%;
 background-color:#aac;
-	
+  background-image: url("imagenes/git.jpg");
+  background-repeat: no-repeat;
 }
+
 body{
 width:80%;
 background-color:#f00;
@@ -59,4 +61,6 @@ main{
 	border:1px solid black;
 	height:100px;
 	width:100%;
+	font-size: 0.7em;
  }
+ 
