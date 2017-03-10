@@ -1,66 +1,85 @@
 @CHARSET "UTF-8";
 html{
-height:100%;
-background-color:#aac;
   background-image: url("imagenes/git.jpg");
-  background-repeat: no-repeat;
+  
 }
 
 body{
-width:80%;
-background-color:#f00;
-border:1px solid red;
+width:100%;
+background-color:black;
+border-left:2px solid black;
+border-right:2px solid black;
+border-top:2px solid black;
 float:right;
 margin-top:30%;
 	
 }
 header{
-	background-color:#cfc;
-	height:100px;
-	width:100%;
-	border:1px solid black;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+
 }
 
-li {
-    float: left;
-}
-
-li a {
+button {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-family: 'Pacifico', cursive;
     letter-spacing:2px;
+    margin:0px 30px;
+ 	
 }
 
-li a:hover {
-    background-color: #110;
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin:center;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:1px solid black;
+}
 
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 
 
 main{
-	background-color:#cfc;
+	background-color:white;
 	border:1px solid black;
 	height:800px;
 	width:100%;
 }
  footer{
- 	background-color:#f55;
-	border:1px solid black;
-	height:100px;
-	width:100%;
-	font-size: 0.7em;
  }
  
