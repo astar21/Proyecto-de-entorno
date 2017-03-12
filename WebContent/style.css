@@ -1,23 +1,19 @@
 @CHARSET "UTF-8";
-html{
-  background-image: url("imagenes/git.jpg");
-  
-}
-
+*{margin: 0;
+ padding: 0;}
 body{
-width:100%;
-background-color:black;
-border-left:2px solid black;
-border-right:2px solid black;
-border-top:2px solid black;
-float:right;
-margin-top:30%;
+
 	
 }
 header{
 
 }
-
+div.imagenPortada {
+  background: linear-gradient(to right, #FFFAF0 ,  #D2691E ); 
+}
+div.menu{
+    background-color: black;
+}
 button {
     display: block;
     color: white;
@@ -63,14 +59,14 @@ button {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color:  #FF6347;}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color:  #FF6347;
 }
 
 
