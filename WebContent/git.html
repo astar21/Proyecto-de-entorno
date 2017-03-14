@@ -36,17 +36,153 @@
 </div>
 </header>
 <main>
-<p>HOLAAAAAAAAAAAA</p>
-  <p>HOLAAAAAAAAAAAA</p>
-    <p>HOLAAAAAAAAAAAA</p>
-      <p>HOLAAAAAAAAAAAA</p>
-        <p>HOLAAAAAAAAAAAA</p>
 
 
+		<div class="git" id="configuracion">
+		<a name="configuracion">
+			<h1>Configuración</h1>
+            <p>Todos los comandos disponibles para la configuración:</p>
+			<p><code class="comando">git config --help</code></p>
+			<p>Para configurar tu nombre y email usaremos:</p>
+			<p><code class="comando">git config --global user.name [nombre_usuario]</code></p>
+			<p><code class="comando">git config --global user.email [email]</code></p></a>
+    </div>
+            
+    <div class="git" id="gitInit">
+			<a name="git_init">
+			<h1>Git Init</h1>
+			<p>Para crear un nuevo repositorio de git
+
+                </p>
+			<p>creamos un directorio nuevo, lo abrimos y ejecutamos
+</p>
+				<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init"><code class="comando">git init</code></a>
+			</a>
+    </div>
+    		<div class="git" id="gitAdd">
+			<a name="git_add">
+			<h1>Git Add y Git Commit</h1>
+			<p>El comando add se usa para añadir los cambios al 'árbol' Index.</p>
+			<p><a href="http://git-scm.com/docs/git-add"><code class="comando">git add [nombre_archivo</code>]</a></p>
+			<p>Una vez hayamos añadido el archivo, usamos el comando git commit para guardar los cambios.</p>
+			<p><code class="comando"><a href="http://git-scm.com/docs/git-commit">git commit -m "UnaDefinición"</a></code></p> 
+			</a>
+                
+		</div>
+    		<div class="git" id="directoriosTrabajo">
+			<a name="directorios_trabajo">
+			<h1>Directorios de trabajo</h1>
+			<p>Git divide el repositorio local en 3 'árboles' diferentes:
+			</p>
+			<p><code class="directorio">Directorio de trabajo</code> Contiene los archivos de nuestro repositorio.</p>
+			<p><code class="directorio">Index</code> La zona intermedia.</p>
+			<p><code class="directorio">Head</code> Apunta al último commit que hemos realizado.</p>
+			<p>Aquí un dibujo para aclarar esta información:</p>
+                <a href="https://git-scm.com/book/es/v1/Empezando-Fundamentos-de-Git#Los-tres-estados"><img src="flujoTrabajo.png"></a></a></div>
+
+		<div class="git" id="gitBranch">
+			<a name="git_branch">
+			<h1>Git Branch</h1>
+			<p>Es el comando usado para crear una rama.</p>
+			<p>Para ello usamos este comando:</p>
+                <a href="https://www.atlassian.com/git/tutorials/using-branches/git-branch"><code class="comando">git branch [nombre_rama]</code></a>
+			</a>
+		</div>
+
+		<div class="git" id="gitCheckout">
+			<a name="git_checkout">
+			<h1>Git Checkout</h1>
+			<p>Para cambiarnos a una rama ya creada usamos el siguiente comando:</p>
+				<a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout"><code class="comando">git checkout [nombre_rama]</code></a>
+			<p>Para crear una rama y cambiarnos directamente a ella, usaremos:</p>
+				<code class="comando"><a href="http://git-scm.com/docs/git-checkout">git checkout -b  [nombre_rama]</a></code>
+			</a>
+		</div>
+
+		<div class="git" id="gitFork">
+			<a name="git_fork">
+			<h1>Git Fork</h1>
+			<p>Es una copia exacta de un repositorio original</p> 
+			<p>que podemos usar como un repositorio git cualquiera. </p>
+			<p>Para ello usaremos el siguiente comando:</p>
+				<a href="http://aprendegit.com/fork-de-repositorios-para-que-sirve/"><code class="comando">git fork</code></a>
+			</a>
+		</div>
+
+		<div class="git" id="gitClone">
+			<a name="git_clone">
+			<h1>Git Clone</h1>
+			<p>El git clone, se usa para crear una copia local de un repositorio.</p>
+			<p>Se usa el siguiente comando:</p>
+				<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone"><code class="comando">git clone [repositorio]</code></a>
+			<p>Si queremos clonar un repositorio de un servidor remoto, usaremos:</p>
+				<a href="http://git-scm.com/docs/git-clone"><code class="comando">git clone [username@host:/repositorio]</code></a>
+			</a>
+		</div>
+    
+		<div class="git" id="gitPush">
+			<a name="git_push">
+			<h1>Git Push</h1>
+			<p>Utilizaremos este comando para enviar los cambios realizados en el 'árbol' HEAD al repositorio remoto.</p>
+			<p><a href="https://www.atlassian.com/git/tutorials/syncing/git-push"><code class="comando">git push origin [nombre_rama]</code></a></p>
+			</a>
+		</div>
+		<div class="git" id="gitPull">
+		<a name="git_pull">
+			<h1>Git Pull, Git Merge y Git Rebase. Actualizar/Unir</h1>
+			<pre></pre>
+			<p>Para actualizar el repositorio local con el commit más reciente usaremos:</p>
+			<p><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull"><code class="comando">git pull</code></a></p>
+			<p>Una vez realizada ésta actualización, fusionaremos las ramas con:</p>
+			<p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge"><code class="comando">git merge [nombre_rama]</code></a></p>
+            <img src="branches.png">
+			<p>Para combinar varios commits en uno mismo y por tanto permitir que el usuario</p>
+			<p>reescriba el historial de commits antes de hacer un push de los cambios, usaremos:</p>
+			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">git rebase</a></code></p>
+		</a>
+		</div>
+    
+        <div class="git" id="gitReset">
+		<a name="git_reset">
+			<h1>Git Reset y Git Revert. Deshacer cambios</h1>
+			<p>Cuando queramos descartar commits en una rama privada o descartar cambios no deseados, usaremos: </p>
+			<p><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-reset"><code class="comando">git reset[commit]</code></a></p><img src="reset.png">
+			<p>Si lo que queremos es deshacer un commit en una rama pública, usaremos:</p>
+			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-revert">git revert[commit]</a></code></p>
+            <img src="revert.png">
+		</a>
+        </div>
+
+		<div class="git" id="gitStatus">
+		<a name="git_status">
+			<h1>Estado del directorio y cambios locales</h1>
+			<p>Para mostrar el estado del directorio de trabajo que estamos usando, usaremos:</p>
+			<p><a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-status"><code class="comando">git status</code></a></p>
+			<p>Para reemplazar cambios locales usamos el comando:</p>
+			<p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout"><code class="comando">git checkout -- [nombre_archivo]</code></a></p>
+			<p>Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD.</p>
+			<p>Los cambios que ya han sido agregados al Index,</p>
+			<p> así como también los nuevos archivos, se mantendrán sin cambio. </p>
+			<p>En caso de que el usuario quiera deshacer todos los cambios locales y commits,</p>
+			<p> puede traer la última versión del servidor y apuntar a tu copia local principal con el siguiente comando:</p>
+			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/syncing/git-fetch">git fetch origin</a></code></p>
+		</a>
+		</div>
+    
+		<div class="git" id="gitDiff">
+		<a name="git_diff">
+			<h1>Git Diff. Revisar estados antes de fusionar</h1>
+			<p>Cuando git intente fusionar los cambios, no siempre será posible. Surgirán conflictos.</p>
+			<p>Si sucede esto, tendremos que modificar los archivos que el propio git nos marcará</p>
+			<p>Una vez modificados, tendremos que añadirlos con git add.</p>
+			<p>Para revisar estos cambios antes de fusionar, utilizaremos este comando:</p>
+			<p><a href="http://www.gitguys.com/topics/git-diff/"><code class="comando">git diff [rama_actual] [rama_a_la_que_unirse]</code></a></p>
+		</a>
+		</div>
 
 </main>
 <footer>
-   <p>  Esta pagina esta realizada por &copy Marco Perez&Jose Coca</p>
+   <p>  Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
 </footer>
 </body>
 </html>
