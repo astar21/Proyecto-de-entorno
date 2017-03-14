@@ -107,7 +107,7 @@ button a{
 
 }
 #videos{
-    display:flex;
+    display:flex-center;
     flex-wrap: wrap;
 
 }
@@ -141,7 +141,11 @@ main{
   margin:15px;
 }
 h2{
+    font-family:'Pacifico', cursive;
     text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    
 }
  footer{
     width: 100%;
