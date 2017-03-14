@@ -3,23 +3,24 @@
  padding: 0;}
 body{
 
-	
+
 }
 header{
 
 
 }
 div.iconos{
-   float: right; 
+   float: right;
    transition: transform 1s;
    padding: 5px;
-   
+
 
 
 }
 div.iconos:hover{
     transform: rotate(360deg);
 }
+
 
 
 
@@ -31,7 +32,7 @@ div.iconos img{width: 32px;
 }
 
 div.imagenPortada {
-  background: linear-gradient(to right, #FFFAF0 ,  #D2691E ); 
+  background: linear-gradient(to right, #FFFAF0 ,  #D2691E );
 }
 div.menu{
     background-color: black;
@@ -45,7 +46,7 @@ button {
     font-family: 'Pacifico', cursive;
     letter-spacing:2px;
     margin:0px 30px;
- 
+
 }
 
 
@@ -91,7 +92,7 @@ button {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    
+
 }
 
 .dropdown:hover .dropbtn {
@@ -99,18 +100,11 @@ button {
 }
 
 
-.borrar{
-display:none;
-}
-
-.borrar:target {
-  display:flex;
-}
 
 button a{
 	color:white;
 	text-decoration: none;
-	
+
 }
 #videos{
     display:flex;
@@ -123,10 +117,28 @@ iframe{
 
 }
 main{
-	background-color:white;
+	background: -webkit-linear-gradient( orange, white);
 
 	width:100%;
 
+}
+.Inicio h1{
+  font-size: 50px;
+  color:grey;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.Inicio p{
+
+  margin:15px;
+}
+.lista{
+
+  margin-left: 50px;
+}
+.p p{
+  margin:15px;
 }
 h2{
     text-align: center;
@@ -141,4 +153,3 @@ h2{
 bottom: 0px;
 
  }
- 
