@@ -38,19 +38,82 @@
 <main>
  <div id='main' class="GitEclipse">
   <h1>Git en Eclipse</h1>
-  <h2>¿Como instalar git en Eclipse?</h2>
-  <p>Primero debemos instalar el plugin egit en nuestro Eclipse. Para ello debemos buscar el plugin en el marketplace de la página de eclipse y seguir las instrucciones para añadirlo. Para añadirlo simplemente debemos abrir en la parte superior el menú “help” y seleccionar “install new software“. </p>
-  <p>Desde aquí debemos añadir el repositorio del marketplace que incluye los plugins. Para ello debemos pulsar sobre el botón “Add” y añadir en la ventana que aparece el siguiente repositorio. </p>
-  <p>A continuación nos aparecerán los plugins disponibles. Seleccionaremos el paquete “Eclipse Git Team Provider” y pulsamos sobre next.</p>
-  <p>Se descargarán los archivos necesarios para poder usar Git desde nuestro eclipse. Tras la descarga e instalación automática del plugin nos pedirá reiniciar Eclipse. Lo reiniciamos y ya tenemos nuestro IDE listo para ser usado con Git</p>
-  <h2>¿Como configuramos Git en Eclipse</h2>
+    <h2>Un poco de información..¿Que es Eclipse?</h2>
+     <p> Para poder elaborar una aplicación es necesario utilizar una serie de herramientas que nos
+permitan escribirla, depurarla, traducirla y ejecutarla. Este conjunto de herramientas se
+conoce como entorno de desarrollo integrado, o IDE, y su función es proporcionar
+un marco de trabajo para el lenguaje de programación.</p>
+<p>La selección y una utilización óptima de los entornos de desarrollo será una
+decisión muy importante en el procedimiento de creación de software. El entorno de desarrollo
+es la herramienta con la cual el programador tendrá que trabajar durante
+la mayor parte de tiempo que dedique a la creación de nuevas aplicaciones. </p>
+<p>Una vez que se domine las facilidades que ofrezca el entorno, se podrá optimizar el tiempo
+de desarrollo de software y facilitar la obtención de un producto de calidad.</p>
+  <h2>Instalación</h2>
+  <p>Primero debemos instalar el plugin de git en nuestro Eclipse.
+    Para ello debemos buscar el plugin en el marketplace de la página
+    de eclipse y seguir las instrucciones para añadirlo.
+    Para añadirlo simplemente debemos abrir en la parte superior el menú “help”
+    y seleccionar “install new software“. </p><img src="imagenes/1.png">
+  <p>Desde aquí debemos añadir el repositorio del marketplace que incluye los plugins.
+    Para ello debemos pulsar sobre el botón “Add” y añadir en la ventana que
+    aparece el siguiente repositorio. </p><img src="imagenes/2.png">
+  <p>A continuación nos aparecerán los plugins disponibles. Seleccionaremos el paquete
+    “Eclipse Git Team Provider” y pulsamos sobre next.</p><img src="imagenes/3.png">
+  <p>Se descargarán los archivos necesarios para poder usar Git desde nuestro eclipse.
+    Tras la descarga e instalación automática del plugin nos pedirá reiniciar Eclipse.
+    Lo reiniciamos y ya tenemos nuestro IDE listo para ser usado con Git</p><img src="imagenes/4.png">
+  <h2>Configuración</h2>
   <p>Una vez reiniciado Eclipse debemos conectarnos a nuestra cuenta de Git para empezar a utilizarlo. Para ello debemos seleccionar el menú “Window” y allí la opción Preferences.
-Una vez allí debemos situarnos en Preferences > Team > Git > Configuratio</p>
-  <p>Una vez allí seleccionamos “Add entry” y debemos introducir los valores user.name y user.email para identificarnos </p>
- <p>Una vez hechos estos pasos ya tenemos nuestro Eclipse listo para programar en equipo y con control de versiones, tanto para crear proyectos nuevos como para abrir los ya existentes. </p>
-  <p></p>
-   <p></p>
-</main>
+Una vez allí debemos situarnos en Preferences > Team > Git > Configuratio</p><img src="imagenes/5.png">
+  <p>Una vez allí seleccionamos “Add entry” y debemos introducir los valores
+    user.name y user.email para identificarnos </p><img src="imagenes/6.png"><img src="imagenes/7.png">
+ <p>Una vez hechos estos pasos ya tenemos nuestro Eclipse listo para programar en
+   equipo y con control de versiones,
+   tanto para crear proyectos nuevos como para abrir los ya existentes. </p>
+
+   <h2>Primeros pasos...</h2>
+ <p>Abrimos Eclipse y creamos un nuevo Proyecto
+   web estático y lo llamaremos HTMLEclipse.</p><img src="imagenes/000.png">
+<p>Una vez creado, nos situamos encima de él,
+botón derecho, Team → Share Project ... Nos
+saldrá una ventana como la siguiente para
+configurar el Repositorio Git. Clickamos la casilla
+Use or create repository in parent folder
+or project y elegimos el proyecto que hemos creado
+anteriormente. Posteriormente, pulsamos
+el botón de Create Repository.</p><img src="imagenes/001.jpg"><img src="imagenes/002.jpg"><img src="imagenes/003.jpg">
+<p>Una vez acabado lo anterior, nos dirigimos a la página oficial de git, y creamos un
+Repositorio nuevo. Pulsamos en el “+” y
+seleccionamos New repository.</p><img src="imagenes/004.jpg">
+<p>Le damos el nombre de How to. Lo creamos.</p><img src="imagenes/005.jpg">
+<p>Copiamos el enlace seleccionado en la siguiente
+imagen y nos dirigimos al Eclipse.</p><img src="imagenes/006.jpg">
+<p>Arriba a la derecha
+encontraremos un icono para abrir otras perspectivas,
+lo pulsamos y
+seleccionamos la opción de Git. Haremos
+un commit inicial para iniciar el proyecto.
+Arrastramos un archivo aleatorio que encontremos
+en Unstaged Changes y lo arrastramos a
+Staged Changes. Una vez hecho esto, pulsamos el botón Commit.</p><img src="imagenes/007.jpg">
+<p>Una vez hecho esto, nos situamos encima del proyecto,
+ botón derecho, Remote → Push ...
+Pegaremos el enlace anterior y pondremos nuestro usuario y contraseña. Pulsamos en
+Next> .</p><img src="imagenes/008.jpg">
+<p>Pulsamos en Source ref: y escogemos master. y
+Pulsamos en +Add Spec. Y finalizamos en
+el botón Finish.</p><img src="imagenes/009.jpg">
+<p>Una vez acabado esto, descargamos un git ignore para ignorar archivos innecesarios.
+Google → Git ignore Eclipse.
+Clickamos en la primera opción y descargamos el archivo.</p><img src="imagenes/010.jpg">
+<p>Creamos un archivo .gitignore dentro de nuestro repositorio
+git y copiamos el archivo
+descargado.
+Cerramos Eclipse para que surtan efecto los cambios.</p>
+
+    </div>
+    </main>
 <footer>
   <p>  Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
 </footer>
