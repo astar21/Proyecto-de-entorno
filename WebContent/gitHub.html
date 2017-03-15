@@ -19,26 +19,47 @@
 </div>
 <div class="dropdown">
   <button class="dropbtn"><a href="git.html">Git</a></button>
+  <div class="dropdown-content">
+    <a href="git.html#configurcion">Configuración</a>
+    <a href="git.html#gitInit">Git Init</a>
+    <a href="git.html#gitAdd">Git Add</a>
+    <a href="git.html#directoriosTrabajo">Directorios de trabajo</a>
+    <a href="git.html#gitBranch">Git Branch</a>
+    <a href="git.html#gitCheckout">Git Checkout</a>
+    <a href="git.html#gitFork">Git Fork</a>
+    <a href="git.html#gitClone">Git Clone</a>
+    <a href="git.html#gitPush">Git Push</a>
+    <a href="git.html#gitPull">Git Pull/Merge/Rebase</a>
+    <a href="git.html#gitReset">Undoing changes</a>
+    <a href="git.html#gitStatus">Estados y cambios</a>
+    <a href="git.html#gitDiff">Git Diff</a>
+  </div>
+
 
 </div>
 <div class="dropdown">
   <button class="dropbtn"><a href="gitHub.html">GitEclipse</a></button>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#eclipse">Eclipse</a>
+    <a href="#instalacion">Instalición</a>
+    <a href="#configuracion">Configuracón</a>
+    <a href="#primerosPasos">Primeros pasos</a>
   </div>
 </div>
 <div class="dropdown">
   <button class="dropbtn"><a href="tutoriales.html">Tutoriales</a></button>
-
+  <div class="dropdown-content">
+    <a href="tutoriales.html#faciles">Primeros pasos</a>
+    <a href="tutoriales.html#medios">Nuestro primer proyecto</a>
+    <a href="tutoriales.html#dificiles">Github&Eclipse</a>
+  </div>
 </div>
 </div>
 </header>
 <main>
  <div id='main' class="GitEclipse">
   <h1>Git en Eclipse</h1>
-    <h2>Un poco de información..¿Que es Eclipse?</h2>
+    <h2 id="eclipse">Un poco de información..¿Que es Eclipse?</h2>
      <p> Para poder elaborar una aplicación es necesario utilizar una serie de herramientas que nos
 permitan escribirla, depurarla, traducirla y ejecutarla. Este conjunto de herramientas se
 conoce como entorno de desarrollo integrado, o IDE, y su función es proporcionar
@@ -49,7 +70,7 @@ es la herramienta con la cual el programador tendrá que trabajar durante
 la mayor parte de tiempo que dedique a la creación de nuevas aplicaciones. </p>
 <p>Una vez que se domine las facilidades que ofrezca el entorno, se podrá optimizar el tiempo
 de desarrollo de software y facilitar la obtención de un producto de calidad.</p>
-  <h2>Instalación</h2>
+  <h2 id="instalacion">Instalación</h2>
   <p>Primero debemos instalar el plugin de git en nuestro Eclipse.
     Para ello debemos buscar el plugin en el marketplace de la página
     de eclipse y seguir las instrucciones para añadirlo.
@@ -63,7 +84,7 @@ de desarrollo de software y facilitar la obtención de un producto de calidad.</
   <p>Se descargarán los archivos necesarios para poder usar Git desde nuestro eclipse.
     Tras la descarga e instalación automática del plugin nos pedirá reiniciar Eclipse.
     Lo reiniciamos y ya tenemos nuestro IDE listo para ser usado con Git</p><img src="imagenes/4.png">
-  <h2>Configuración</h2>
+  <h2 id="configuracion">Configuración</h2>
   <p>Una vez reiniciado Eclipse debemos conectarnos a nuestra cuenta de Git para empezar a utilizarlo. Para ello debemos seleccionar el menú “Window” y allí la opción Preferences.
 Una vez allí debemos situarnos en Preferences > Team > Git > Configuratio</p><img src="imagenes/5.png">
   <p>Una vez allí seleccionamos “Add entry” y debemos introducir los valores
@@ -72,7 +93,7 @@ Una vez allí debemos situarnos en Preferences > Team > Git > Configuratio</p><
    equipo y con control de versiones,
    tanto para crear proyectos nuevos como para abrir los ya existentes. </p>
 
-   <h2>Primeros pasos...</h2>
+   <h2  id="primerosPasos">Primeros pasos...</h2>
  <p>Abrimos Eclipse y creamos un nuevo Proyecto
    web estático y lo llamaremos HTMLEclipse.</p><img src="imagenes/000.png">
 <p>Una vez creado, nos situamos encima de él,
