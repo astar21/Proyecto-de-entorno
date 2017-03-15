@@ -1,210 +1,277 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-<meta charset="UTF-8">
-<title> Tutoriales de Git </title>
-
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <title> Tutoriales de Git </title>
 </head>
 <body>
 <header>
-  <div class="imagenPortada">
-  <img class="imagenes" id="a0"  src="imagenes/portada.png " width="50%" >
-  <div  class="iconos"><a href="https://github.com/"><img class="imagenes" id="a1"  src="imagenes/icono1.png "></a></div>
-  <div  class="iconos"><a href="https://es-es.facebook.com/GitHub/"><img class="imagenes" id="a2"  src="imagenes/icono2.png "></a></div>
-  <div  class="iconos"><a href="https://twitter.com/github?lang=ca"><img class="imagenes" id="a3"  src="imagenes/icono3.png "></a></div>
-  </div>
-<div class="menu">
-<div class="dropdown">
-  <a href="index.html"><button class="dropbtn">Inicio</button></a>
-  <div class="dropdown-content"></div>
-</div>
-<div class="dropdown">
-  <a href="git.html"><button class="dropbtn">Git</button></a>
-  <div class="dropdown-content">
-    <a href="#configurcion">Configuración</a>
-    <a href="#gitInit">Git Init</a>
-    <a href="#gitAdd">Git Add</a>
-    <a href="#directoriosTrabajo">Directorios de trabajo</a>
-    <a href="#gitBranch">Git Branch</a>
-    <a href="#gitCheckout">Git Checkout</a>
-    <a href="#gitFork">Git Fork</a>
-    <a href="#gitClone">Git Clone</a>
-    <a href="#gitPush">Git Push</a>
-    <a href="#gitPull">Git Pull/Merge/Rebase</a>
-    <a href="#gitReset">Undoing changes</a>
-    <a href="#gitStatus">Estados y cambios</a>
-    <a href="#gitDiff">Git Diff</a>
-  </div>
-</div>
-<div class="dropdown">
-  <a href="gitHub.html"><button class="dropbtn">GitEclipse</button></a>
-  <div class="dropdown-content">
-    <a href="gitHub.html#eclipse">Eclipse</a>
-    <a href="gitHub.html#instalacion">Instalición</a>
-    <a href="gitHub.html#configuracion">Configuracón</a>
-    <a href="gitHub.html#primerosPasos">Primeros pasos</a>
-  </div>
-</div>
-<div class="dropdown">
-  <a href="tutoriales.html"><button class="dropbtn">Tutoriales</button></a>
-  <div class="dropdown-content">
-    <a href="tutoriales.html#faciles">Primeros pasos</a>
-    <a href="tutoriales.html#medios">Nuestro primer proyecto</a>
-    <a href="tutoriales.html#dificiles">Github&Eclipse</a>
-  </div>
-</div>
-</div>
+    <div class="imagenPortada">
+        <img class="imagenes" id="a0" src="imagenes/portada.png " width="50%">
+        <div class="iconos"><a href="https://github.com/"><img class="imagenes" id="a1" src="imagenes/icono1.png "></a>
+        </div>
+        <div class="iconos"><a href="https://es-es.facebook.com/GitHub/"><img class="imagenes" id="a2"
+                                                                              src="imagenes/icono2.png "></a></div>
+        <div class="iconos"><a href="https://twitter.com/github?lang=ca"><img class="imagenes" id="a3"
+                                                                              src="imagenes/icono3.png "></a></div>
+    </div>
+    <div class="menu">
+        <div class="dropdown">
+            <a href="index.html" style="color: white">
+                <button class="dropbtn">Inicio</button>
+            </a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+            <a href="git.html">
+                <button class="dropbtn">Git</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="#configuracion">Configuración</a>
+                <a href="#gitInit">Git Init</a>
+                <a href="#gitAdd">Git Add</a>
+                <a href="#directoriosTrabajo">Directorios de trabajo</a>
+                <a href="#gitBranch">Git Branch</a>
+                <a href="#gitCheckout">Git Checkout</a>
+                <a href="#gitFork">Git Fork</a>
+                <a href="#gitClone">Git Clone</a>
+                <a href="#gitPush">Git Push</a>
+                <a href="#gitPull">Git Pull/Merge/Rebase</a>
+                <a href="#gitReset">Undoing changes</a>
+                <a href="#gitStatus">Estados y cambios</a>
+                <a href="#gitDiff">Git Diff</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="gitHub.html">
+                <button class="dropbtn">GitEclipse</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="gitHub.html#eclipse">Eclipse</a>
+                <a href="gitHub.html#instalacion">Instalación</a>
+                <a href="gitHub.html#configuracion">Configuración</a>
+                <a href="gitHub.html#primerosPasos">Primeros pasos</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="tutoriales.html">
+                <button class="dropbtn">Tutoriales</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="tutoriales.html#faciles">Primeros pasos</a>
+                <a href="tutoriales.html#medios">Nuestro primer proyecto</a>
+                <a href="tutoriales.html#dificiles">Github&Eclipse</a>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
-
-
-		<div class="git" id="configuracion">
-		<a name="configuracion">
-			<h1>Configuración</h1>
+    <div id="configuracion">
+        <a name="config">
+            <h1>Configuración</h1>
+            <br>
             <p>Todos los comandos disponibles para la configuración:</p>
-			<p><code class="comando">git config --help</code></p>
-			<p>Para configurar tu nombre y email usaremos:</p>
-			<p><code class="comando">git config --global user.name [nombre_usuario]</code></p>
-			<p><code class="comando">git config --global user.email [email]</code></p></a>
+            <br>
+            <p><code class="comando">git config --help</code></p>
+            <br>
+            <p>Para configurar tu nombre y email usaremos:</p>
+            <br>
+            <p><code class="comando">git config --global user.name [nombre_usuario]</code></p>
+            <p><code class="comando">git config --global user.email [email]</code></p></a>
     </div>
-
     <div class="git" id="gitInit">
-			<a name="git_init">
-			<h1>Git Init</h1>
-			<p>Para crear un nuevo repositorio de git
-
-                </p>
-			<p>creamos un directorio nuevo, lo abrimos y ejecutamos
-</p>
-				<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init"><code class="comando">git init</code></a>
-			</a>
+        <a name="git_init">
+            <h1>Git Init</h1>
+            <br>
+            <p>Para crear un nuevo repositorio de git</p>
+            <p>creamos un directorio nuevo, lo abrimos y ejecutamos
+            </p>
+            <br>
+            <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init"><code class="comando">git
+                init</code></a>
+        </a>
     </div>
-    		<div class="git" id="gitAdd">
-			<a name="git_add">
-			<h1>Git Add y Git Commit</h1>
-			<p>El comando add se usa para añadir los cambios al 'árbol' Index.</p>
-			<p><a href="http://git-scm.com/docs/git-add"><code class="comando">git add [nombre_archivo</code>]</a></p>
-			<p>Una vez hayamos añadido el archivo, usamos el comando git commit para guardar los cambios.</p>
-			<p><code class="comando"><a href="http://git-scm.com/docs/git-commit">git commit -m "UnaDefinición"</a></code></p>
-			</a>
+    <div class="git" id="gitAdd">
+        <a name="git_add">
+            <h1>Git Add y Git Commit</h1>
+            <br>
+            <p>El comando add se usa para añadir los cambios al 'árbol' Index.</p>
+            <br>
+            <p><a href="http://git-scm.com/docs/git-add"><code class="comando">git add [nombre_archivo</code>]</a></p>
+            <br>
+            <p>Una vez hayamos añadido el archivo, usamos el comando git commit para guardar los cambios.</p>
+            <br>
+            <p><code class="comando"><a href="http://git-scm.com/docs/git-commit">git commit -m
+                "UnaDefinición"</a></code></p>
+        </a>
 
-		</div>
-    		<div class="git" id="directoriosTrabajo">
-			<a name="directorios_trabajo">
-			<h1>Directorios de trabajo</h1>
-			<p>Git divide el repositorio local en 3 'árboles' diferentes:
-			</p>
-			<p><code class="directorio">Directorio de trabajo</code> Contiene los archivos de nuestro repositorio.</p>
-			<p><code class="directorio">Index</code> La zona intermedia.</p>
-			<p><code class="directorio">Head</code> Apunta al último commit que hemos realizado.</p>
-			<p>Aquí un dibujo para aclarar esta información:</p>
-                <a href="https://git-scm.com/book/es/v1/Empezando-Fundamentos-de-Git#Los-tres-estados"><img class="imagenes" id="b0" src="imagenes/flujoTrabajo.png"></a></a></div>
+    </div>
+    <div class="git" id="directoriosTrabajo">
+        <a name="directorios_trabajo">
+            <h1>Directorios de trabajo</h1>
+            <br>
+            <p>Git divide el repositorio local en 3 'árboles' diferentes:
+            </p>
+            <p><code class="directorio">Directorio de trabajo</code> Contiene los archivos de nuestro repositorio.</p>
+            <p><code class="directorio">Index</code> La zona intermedia.</p>
+            <p><code class="directorio">Head</code> Apunta al último commit que hemos realizado.</p>
+            <p>Aquí un dibujo para aclarar esta información:</p>
+            <a href="https://git-scm.com/book/es/v1/Empezando-Fundamentos-de-Git#Los-tres-estados"><img class="imagenes"
+                                                                                                        id="b0"
+                                                                                                        src="imagenes/flujoTrabajo.png"></a></a>
+    </div>
 
-		<div class="git" id="gitBranch">
-			<a name="git_branch">
-			<h1>Git Branch</h1>
-			<p>Es el comando usado para crear una rama.</p>
-			<p>Para ello usamos este comando:</p>
-                <a href="https://www.atlassian.com/git/tutorials/using-branches/git-branch"><code class="comando">git branch [nombre_rama]</code></a>
-			</a>
-		</div>
+    <div class="git" id="gitBranch">
+        <a name="git_branch">
+            <h1>Git Branch</h1>
+            <br>
+            <p>Es el comando usado para crear una rama.</p>
+            <p>Para ello usamos este comando:</p>
+            <br>
+            <a href="https://www.atlassian.com/git/tutorials/using-branches/git-branch"><code class="comando">git branch
+                [nombre_rama]</code></a>
+        </a>
+    </div>
 
-		<div class="git" id="gitCheckout">
-			<a name="git_checkout">
-			<h1>Git Checkout</h1>
-			<p>Para cambiarnos a una rama ya creada usamos el siguiente comando:</p>
-				<a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout"><code class="comando">git checkout [nombre_rama]</code></a>
-			<p>Para crear una rama y cambiarnos directamente a ella, usaremos:</p>
-				<code class="comando"><a href="http://git-scm.com/docs/git-checkout">git checkout -b  [nombre_rama]</a></code>
-			</a>
-		</div>
+    <div class="git" id="gitCheckout">
+        <a name="git_checkout">
+            <h1>Git Checkout</h1>
+            <br>
+            <p>Para cambiarnos a una rama ya creada usamos el siguiente comando:</p>
+            <br>
+            <a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout"><code class="comando">git
+                checkout [nombre_rama]</code></a>
+            <br><br>
+            <p>Para crear una rama y cambiarnos directamente a ella, usaremos:</p>
+            <br>
+            <code class="comando"><a href="http://git-scm.com/docs/git-checkout">git checkout -b
+                [nombre_rama]</a></code>
+        </a>
+    </div>
 
-		<div class="git" id="gitFork">
-			<a name="git_fork">
-			<h1>Git Fork</h1>
-			<p>Es una copia exacta de un repositorio original</p>
-			<p>que podemos usar como un repositorio git cualquiera. </p>
-			<p>Para ello usaremos el siguiente comando:</p>
-				<a href="http://aprendegit.com/fork-de-repositorios-para-que-sirve/"><code class="comando">git fork</code></a>
-			</a>
-		</div>
+    <div class="git" id="gitFork">
+        <a name="git_fork">
+            <h1>Git Fork</h1>
+            <br>
+            <p>Es una copia exacta de un repositorio original</p>
+            <p>que podemos usar como un repositorio git cualquiera. </p>
+            <p>Para ello usaremos el siguiente comando:</p>
+            <br>
+            <a href="http://aprendegit.com/fork-de-repositorios-para-que-sirve/"><code class="comando">git
+                fork</code></a>
+        </a>
+    </div>
 
-		<div class="git" id="gitClone">
-			<a name="git_clone">
-			<h1>Git Clone</h1>
-			<p>El git clone, se usa para crear una copia local de un repositorio.</p>
-			<p>Se usa el siguiente comando:</p>
-				<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone"><code class="comando">git clone [repositorio]</code></a>
-			<p>Si queremos clonar un repositorio de un servidor remoto, usaremos:</p>
-				<a href="http://git-scm.com/docs/git-clone"><code class="comando">git clone [username@host:/repositorio]</code></a>
-			</a>
-		</div>
+    <div class="git" id="gitClone">
+        <a name="git_clone">
+            <h1>Git Clone</h1>
+            <br>
+            <p>El git clone, se usa para crear una copia local de un repositorio.</p>
+            <p>Se usa el siguiente comando:</p>
+            <br>
+            <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone"><code class="comando">git
+                clone [repositorio]</code></a>
+            <br><br>
+            <p>Si queremos clonar un repositorio de un servidor remoto, usaremos:</p>
+            <br>
+            <a href="http://git-scm.com/docs/git-clone"><code class="comando">git clone
+                [username@host:/repositorio]</code></a>
+        </a>
+    </div>
 
-		<div class="git" id="gitPush">
-			<a name="git_push">
-			<h1>Git Push</h1>
-			<p>Utilizaremos este comando para enviar los cambios realizados en el 'árbol' HEAD al repositorio remoto.</p>
-			<p><a href="https://www.atlassian.com/git/tutorials/syncing/git-push"><code class="comando">git push origin [nombre_rama]</code></a></p>
-			</a>
-		</div>
-		<div class="git" id="gitPull">
-		<a name="git_pull">
-			<h1>Git Pull, Git Merge y Git Rebase. Actualizar/Unir</h1>
-			<pre></pre>
-			<p>Para actualizar el repositorio local con el commit más reciente usaremos:</p>
-			<p><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull"><code class="comando">git pull</code></a></p>
-			<p>Una vez realizada ésta actualización, fusionaremos las ramas con:</p>
-			<p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge"><code class="comando">git merge [nombre_rama]</code></a></p>
+    <div class="git" id="gitPush">
+        <a name="git_push">
+            <h1>Git Push</h1>
+            <br>
+            <p>Utilizaremos este comando para enviar los cambios realizados en el 'árbol' HEAD al repositorio
+                remoto.</p>
+            <br>
+            <p><a href="https://www.atlassian.com/git/tutorials/syncing/git-push"><code class="comando">git push origin
+                [nombre_rama]</code></a></p>
+        </a>
+    </div>
+    <div class="git" id="gitPull">
+        <a name="git_pull">
+            <h1>Git Pull, Git Merge y Git Rebase. Actualizar/Unir</h1>
+            <br>
+            <p>Para actualizar el repositorio local con el commit más reciente usaremos:</p>
+            <br>
+            <p><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull"><code class="comando">git pull</code></a>
+            </p>
+            <br>
+            <p>Una vez realizada ésta actualización, fusionaremos las ramas con:</p>
+            <br>
+            <p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge"><code class="comando">git
+                merge [nombre_rama]</code></a></p>
+            <br>
             <img class="imagenes" id="b1" src="imagenes/branches.png">
-			<p>Para combinar varios commits en uno mismo y por tanto permitir que el usuario</p>
-			<p>reescriba el historial de commits antes de hacer un push de los cambios, usaremos:</p>
-			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">git rebase</a></code></p>
-		</a>
-		</div>
+            <p>Para combinar varios commits en uno mismo y por tanto permitir que el usuario</p>
+            <p>reescriba el historial de commits antes de hacer un push de los cambios, usaremos:</p>
+            <br>
+            <p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">git
+                rebase</a></code></p>
+        </a>
+    </div>
 
-    		<div class="git" id="gitReset">
-		<a name="git_reset">
-			<h1>Git Reset y Git Revert. Deshacer cambios</h1>
-			<p>Cuando queramos descartar commits en una rama privada o descartar cambios no deseados, usaremos: </p>
-			<p><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-reset"><code class="comando">git reset[commit]</code></a></p><img class="imagenes" id="b2"  src="imagenes/reset.png">
-			<p>Si lo que queremos es deshacer un commit en una rama pública, usaremos:</p>
-			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-revert">git revert[commit]</a></code></p>
-            <img class="imagenes" id="b3"  src="imagenes/revert.png">
-		</a>
-		</div>
+    <div class="git" id="gitReset">
+        <a name="git_reset">
+            <h1>Git Reset y Git Revert. Deshacer cambios</h1>
+            <br>
+            <p>Cuando queramos descartar commits en una rama privada o descartar cambios no deseados, usaremos: </p>
+            <br>
+            <p><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-reset"><code class="comando">git
+                reset[commit]</code></a></p><img class="imagenes" id="b2" src="imagenes/reset.png">
+            <p>Si lo que queremos es deshacer un commit en una rama pública, usaremos:</p>
+            <p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-revert">git
+                revert[commit]</a></code></p>
+            <img class="imagenes" id="b3" src="imagenes/revert.png">
+        </a>
+    </div>
 
-		<div class="git" id="gitStatus">
-		<a name="git_status">
-			<h1>Estado del directorio y cambios locales</h1>
-			<p>Para mostrar el estado del directorio de trabajo que estamos usando, usaremos:</p>
-			<p><a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-status"><code class="comando">git status</code></a></p>
-			<p>Para reemplazar cambios locales usamos el comando:</p>
-			<p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout"><code class="comando">git checkout -- [nombre_archivo]</code></a></p>
-			<p>Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD.</p>
-			<p>Los cambios que ya han sido agregados al Index,</p>
-			<p> así como también los nuevos archivos, se mantendrán sin cambio. </p>
-			<p>En caso de que el usuario quiera deshacer todos los cambios locales y commits,</p>
-			<p> puede traer la última versión del servidor y apuntar a tu copia local principal con el siguiente comando:</p>
-			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/syncing/git-fetch">git fetch origin</a></code></p>
-		</a>
-		</div>
+    <div class="git" id="gitStatus">
+        <a name="git_status">
+            <h1>Estado del directorio y cambios locales</h1>
+            <br>
+            <p>Para mostrar el estado del directorio de trabajo que estamos usando, usaremos:</p>
+            <br>
+            <p><a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-status"><code
+                    class="comando">git status</code></a></p>
+            <br>
+            <p>Para reemplazar cambios locales usamos el comando:</p>
+            <br>
+            <p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout"><code class="comando">git
+                checkout -- [nombre_archivo]</code></a></p>
+            <br>
+            <p>Este comando reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD.</p>
+            <p>Los cambios que ya han sido agregados al Index,</p>
+            <p> así como también los nuevos archivos, se mantendrán sin cambio. </p>
+            <p>En caso de que el usuario quiera deshacer todos los cambios locales y commits,</p>
+            <p> puede traer la última versión del servidor y apuntar a tu copia local principal con el siguiente
+                comando:</p>
+            <br>
+            <p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/syncing/git-fetch">git fetch
+                origin</a></code></p>
+        </a>
+    </div>
 
-		<div class="git" id="gitDiff">
-		<a name="git_diff">
-			<h1>Git Diff. Revisar estados antes de fusionar</h1>
-			<p>Cuando git intente fusionar los cambios, no siempre será posible. Surgirán conflictos.</p>
-			<p>Si sucede esto, tendremos que modificar los archivos que el propio git nos marcará</p>
-			<p>Una vez modificados, tendremos que añadirlos con git add.</p>
-			<p>Para revisar estos cambios antes de fusionar, utilizaremos este comando:</p>
-			<p><a href="http://www.gitguys.com/topics/git-diff/"><code class="comando">git diff [rama_actual] [rama_a_la_que_unirse]</code></a></p>
-		</a>
-		</div>
+    <div class="git" id="gitDiff">
+        <a name="git_diff">
+            <h1>Git Diff. Revisar estados antes de fusionar</h1>
+            <br>
+            <p>Cuando git intente fusionar los cambios, no siempre será posible. Surgirán conflictos.</p>
+            <p>Si sucede esto, tendremos que modificar los archivos que el propio git nos marcará</p>
+            <p>Una vez modificados, tendremos que añadirlos con git add.</p>
+            <p>Para revisar estos cambios antes de fusionar, utilizaremos este comando:</p>
+            <br>
+            <p><a href="http://www.gitguys.com/topics/git-diff/"><code class="comando">git diff [rama_actual]
+                [rama_a_la_que_unirse]</code></a></p>
+        </a>
+    </div>
 
 </main>
 <footer>
-   <p>  Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
+    <p> Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
 </footer>
 </body>
 </html>
