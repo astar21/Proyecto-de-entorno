@@ -22,8 +22,9 @@ div.iconos:hover{
     transform: rotate(360deg);
 }
 
-div.iconos img{width: 32px;
-    height: 32px;
+div.iconos img{
+  width: 50px;
+  height: 50px;
 }
 
 div.imagenPortada {
@@ -136,9 +137,17 @@ main{
 }
 
 .imagenes{
-  width:900px;
+  width:700px;
 
 }
+.imagenes2{
+
+  width:500px;
+}
+#c0{
+  width:400px;
+}
+
 #a0{
 width:50%;
 
