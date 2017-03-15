@@ -1,130 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-<meta charset="UTF-8">
-<title> Tutoriales de Git </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <title> Tutoriales de Git </title>
 
 </head>
 <body>
 <header>
-  <div class="imagenPortada">
-  <img class="imagenes" id="a0"  src="imagenes/portada.png " width="50%" >
-  <div  class="iconos"><a href="https://github.com/"><img class="imagenes" id="a1"  src="imagenes/icono1.png "></a> </div>
-  <div  class="iconos"><a href="https://es-es.facebook.com/GitHub/"><img class="imagenes" id="a2"  src="imagenes/icono2.png "></a> </div>
-  <div  class="iconos"><a href="https://twitter.com/github?lang=ca"><img class="imagenes" id="a3"  src="imagenes/icono3.png "></a></div>
-  </div>
-<div class="menu">
-<div class="dropdown">
-  <button class="dropbtn"><a href="index.html">Inicio</a></button>
-</div>
-<div class="dropdown">
-  <a href="git.html"><button class="dropbtn">Git</button></a>
-  <div class="dropdown-content">
-    <a href="git.html#configurcion">Configuración</a>
-    <a href="git.html#gitInit">Git Init</a>
-    <a href="git.html#gitAdd">Git Add</a>
-    <a href="git.html#directoriosTrabajo">Directorios de trabajo</a>
-    <a href="git.html#gitBranch">Git Branch</a>
-    <a href="git.html#gitCheckout">Git Checkout</a>
-    <a href="git.html#gitFork">Git Fork</a>
-    <a href="git.html#gitClone">Git Clone</a>
-    <a href="git.html#gitPush">Git Push</a>
-    <a href="git.html#gitPull">Git Pull/Merge/Rebase</a>
-    <a href="git.html#gitReset">Undoing changes</a>
-    <a href="git.html#gitStatus">Estados y cambios</a>
-    <a href="git.html#gitDiff">Git Diff</a>
-  </div>
-
-</div>
-<div class="dropdown">
-  <a href="gitHub.html"><button class="dropbtn">GitEclipse</button></a>
-  <div class="dropdown-content">
-    <a href="gitHub.html#eclipse">Eclipse</a>
-    <a href="gitHub.html#instalacion">Instalición</a>
-    <a href="gitHub.html#configuracion">Configuracón</a>
-    <a href="gitHub.html#primerosPasos">Primeros pasos</a>
-  </div>
-</div>
-<div class="dropdown">
-  <a href="tutoriales.html"><button class="dropbtn">Tutoriales</button></a>
-  <div class="dropdown-content">
-    <a href="tutoriales.html#faciles">Primeros pasos</a>
-    <a href="tutoriales.html#medios">Nuestro primer proyecto</a>
-    <a href="tutoriales.html#dificiles">Github&Eclipse</a>
-  </div>
-</div>
-
-
-</div>
+    <div class="imagenPortada">
+        <img class="imagenes" id="a0" src="imagenes/portada.png " width="50%">
+        <div class="iconos"><a href="https://github.com/"><img class="imagenes" id="a1" src="imagenes/icono1.png "></a>
+        </div>
+        <div class="iconos">
+            <a href="https://es-es.facebook.com/GitHub/">
+                <img class="imagenes" id="a2" src="imagenes/icono2.png ">
+            </a>
+        </div>
+        <div class="iconos">
+            <a href="https://twitter.com/github?lang=ca">
+                <img class="imagenes" id="a3" src="imagenes/icono3.png ">
+            </a>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a href="index.html" style="color: white">Inicio</a>
+            </button>
+        </div>
+        <div class="dropdown">
+            <a href="git.html">
+                <button class="dropbtn">Git</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="git.html#configuracion">Configuración</a>
+                <a href="git.html#gitInit">Git Init</a>
+                <a href="git.html#gitAdd">Git Add</a>
+                <a href="git.html#directoriosTrabajo">Directorios de trabajo</a>
+                <a href="git.html#gitBranch">Git Branch</a>
+                <a href="git.html#gitCheckout">Git Checkout</a>
+                <a href="git.html#gitFork">Git Fork</a>
+                <a href="git.html#gitClone">Git Clone</a>
+                <a href="git.html#gitPush">Git Push</a>
+                <a href="git.html#gitPull">Git Pull/Merge/Rebase</a>
+                <a href="git.html#gitReset">Undoing changes</a>
+                <a href="git.html#gitStatus">Estados y cambios</a>
+                <a href="git.html#gitDiff">Git Diff</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="gitHub.html">
+                <button class="dropbtn">GitEclipse</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="gitHub.html#eclipse">Eclipse</a>
+                <a href="gitHub.html#instalacion">Instalación</a>
+                <a href="gitHub.html#configuracion">Configuración</a>
+                <a href="gitHub.html#primerosPasos">Primeros pasos</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="tutoriales.html">
+                <button class="dropbtn">Tutoriales</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="tutoriales.html#faciles">Primeros pasos</a>
+                <a href="tutoriales.html#medios">Nuestro primer proyecto</a>
+                <a href="tutoriales.html#dificiles">Github&Eclipse</a>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
-  <div id='main' class="Inicio">
-    <h1>¿Qué es Git?</h1>
-    <p> Git es un software de control de versiones diseñado
-     por Linus Torvalds, pensando en la eficiencia y la confiabilidad del
-     mantenimiento de versiones de aplicaciones cuando éstas tienen un gran
-     número de archivos de código fuente. </p>
-     <p>Al principio, Git se pensó como un
-     motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de
-     usuario o front end, sin embargo, Git se ha
-     convertido desde entonces en un sistema de control de versiones con
-     funcionalidad plena.
-     Proyectos de mucha relevancia que usan Git, en particular,
-     el grupo de programación del núcleo Linux. </p>
-    <div>
-  <h2 id="UnpocoHistoria">Un poco de historia de Git...</h2>
-  <div class="p">
-  <p>Git comenzó con un poco de destrucción creativa y una gran polémica.</p>
-  </div>
-  <div class="p">
-  <p>El kernel de Linux es un proyecto de software de código abierto
-    con un alcance bastante amplio.  Durante la mayor parte del mantenimiento
-    del kernel de Linux (1991-2002), los cambios en el software se realizaban
-    a través de parches y archivos.  En el 2002, el proyecto del kernel de Linux
-    empezó a usar un DVCS propietario llamado BitKeeper.</p>
-  </div>
-  <div class="p">
-  <p>En el 2005, la relación entre la comunidad que
-    desarrollaba el kernel de Linux y la compañía que desarrollaba
-    BitKeeper se vino abajo, y la herramienta dejó de ser ofrecida
-    de manera gratuita.  Esto impulsó a la comunidad de desarrollo
-    de Linux (y en particular a Linus Torvalds, el creador de Linux)
-    a desarrollar su propia herramienta basada en algunas de las
-    lecciones que aprendieron mientras usaban BitKeeper.
-    Algunos de los objetivos del nuevo sistema fueron los siguientes:</p>
-  </div>
-  <div class="lista">
-  <ul>
-  <li>
-  <p>Velocidad</p>
-  </li>
-  <li>
-  <p>Diseño sencillo</p>
-  </li>
-  <li>
-  <p>Gran soporte para desarrollo no lineal (miles de ramas paralelas)</p>
-  </li>
-  <li>
-  <p>Completamente distribuido</p>
-  </li>
-  <li>
-  <p>Capaz de manejar grandes proyectos (como el kernel de Linux)
-    eficientemente (velocidad y tamaño de los datos)</p>
-  </li>
-  </ul>
-  </div>
-  <div class="p">
-  <p>Desde su nacimiento en el 2005, Git ha evolucionado y madurado
-    para ser fácil de usar y conservar sus características iniciales.
-    Es tremendamente rápido, muy eficiente con grandes proyectos, y
-    tiene un increíble sistema de ramificación (branching) para desarrollo
-    no lineal. </p>
-  </div>
+    <div id='main' class="Inicio">
+        <h1>¿Qué es Git?</h1>
+        <p> Git es un software de control de versiones diseñado
+            por Linus Torvalds, pensando en la eficiencia y la confiabilidad del
+            mantenimiento de versiones de aplicaciones cuando éstas tienen un gran
+            número de archivos de código fuente. </p>
+        <p>Al principio, Git se pensó como un
+            motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de
+            usuario o front end, sin embargo, Git se ha
+            convertido desde entonces en un sistema de control de versiones con
+            funcionalidad plena.
+            Proyectos de mucha relevancia que usan Git, en particular,
+            el grupo de programación del núcleo Linux. </p>
+        <div>
+            <h2 id="UnpocoHistoria">Un poco de historia de Git...</h2>
+            <div class="p">
+                <p>Git comenzó con un poco de destrucción creativa y una gran polémica.</p>
+            </div>
+            <div class="p">
+                <p>El kernel de Linux es un proyecto de software de código abierto
+                    con un alcance bastante amplio. Durante la mayor parte del mantenimiento
+                    del kernel de Linux (1991-2002), los cambios en el software se realizaban
+                    a través de parches y archivos. En el 2002, el proyecto del kernel de Linux
+                    empezó a usar un DVCS propietario llamado BitKeeper.</p>
+            </div>
+            <div class="p">
+                <p>En el 2005, la relación entre la comunidad que
+                    desarrollaba el kernel de Linux y la compañía que desarrollaba
+                    BitKeeper se vino abajo, y la herramienta dejó de ser ofrecida
+                    de manera gratuita. Esto impulsó a la comunidad de desarrollo
+                    de Linux (y en particular a Linus Torvalds, el creador de Linux)
+                    a desarrollar su propia herramienta basada en algunas de las
+                    lecciones que aprendieron mientras usaban BitKeeper.
+                    Algunos de los objetivos del nuevo sistema fueron los siguientes:</p>
+            </div>
+            <div class="lista">
+                <ul>
+                    <li>
+                        <p>- Velocidad</p>
+                    </li>
+                    <li>
+                        <p>- Diseño sencillo</p>
+                    </li>
+                    <li>
+                        <p>- Gran soporte para desarrollo no lineal (miles de ramas paralelas)</p>
+                    </li>
+                    <li>
+                        <p>- Completamente distribuido</p>
+                    </li>
+                    <li>
+                        <p>- Capaz de manejar grandes proyectos (como el kernel de Linux)
+                            eficientemente (velocidad y tamaño de los datos)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="p">
+                <p>Desde su nacimiento en el 2005, Git ha evolucionado y madurado
+                    para ser fácil de usar y conservar sus características iniciales.
+                    Es tremendamente rápido, muy eficiente con grandes proyectos, y
+                    tiene un increíble sistema de ramificación (branching) para desarrollo
+                    no lineal. </p>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
-  <p>  Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
+    <p> Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
 </footer>
 </body>
 </html>

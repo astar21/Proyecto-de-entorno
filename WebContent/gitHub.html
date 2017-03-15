@@ -1,145 +1,206 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-<meta charset="UTF-8">
-<title> Tutoriales de Git </title>
-
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <title> Tutoriales de Git </title>
 </head>
 <body>
 <header>
-  <div class="imagenPortada">
-  <img class="imagenes" id="a0"  src="imagenes/portada.png " width="50%" >
-  <div  class="iconos"><a href="https://github.com/"><img class="imagenes" id="a1"  src="imagenes/icono1.png "></a> </div>
-  <div  class="iconos"><a href="https://es-es.facebook.com/GitHub/"><img class="imagenes" id="a2"  src="imagenes/icono2.png "></a> </div>
-  <div  class="iconos"><a href="https://twitter.com/github?lang=ca"><img class="imagenes" id="a3"  src="imagenes/icono3.png "></a></div>
-  </div>
-<div class="menu">
-<div class="dropdown">
-  <a href="index.html"><button class="dropbtn">Inicio</button></a>
-  <div class="dropdown-content"></div>
-</div>
-<div class="dropdown">
-<a href="git.html"><button class="dropbtn">Git</button></a>
-  <div class="dropdown-content">
-    <a href="git.html#configurcion">Configuración</a>
-    <a href="git.html#gitInit">Git Init</a>
-    <a href="git.html#gitAdd">Git Add</a>
-    <a href="git.html#directoriosTrabajo">Directorios de trabajo</a>
-    <a href="git.html#gitBranch">Git Branch</a>
-    <a href="git.html#gitCheckout">Git Checkout</a>
-    <a href="git.html#gitFork">Git Fork</a>
-    <a href="git.html#gitClone">Git Clone</a>
-    <a href="git.html#gitPush">Git Push</a>
-    <a href="git.html#gitPull">Git Pull/Merge/Rebase</a>
-    <a href="git.html#gitReset">Undoing changes</a>
-    <a href="git.html#gitStatus">Estados y cambios</a>
-    <a href="git.html#gitDiff">Git Diff</a>
-  </div>
-
-
-</div>
-<div class="dropdown">
-  <a href="gitHub.html"><button class="dropbtn">GitEclipse</button></a>
-  <div class="dropdown-content">
-    <a href="#eclipse">Eclipse</a>
-    <a href="#instalacion">Instalición</a>
-    <a href="#configuracion">Configuracón</a>
-    <a href="#primerosPasos">Primeros pasos</a>
-  </div>
-</div>
-<div class="dropdown">
-  <a href="tutoriales.html"><button class="dropbtn">Tutoriales</button></a>
-  <div class="dropdown-content">
-    <a href="tutoriales.html#faciles">Primeros pasos</a>
-    <a href="tutoriales.html#medios">Nuestro primer proyecto</a>
-    <a href="tutoriales.html#dificiles">Github&Eclipse</a>
-  </div>
-</div>
-</div>
+    <div class="imagenPortada">
+        <img class="imagenes" id="a0" src="imagenes/portada.png " width="50%">
+        <div class="iconos"><a href="https://github.com/"><img class="imagenes" id="a1" src="imagenes/icono1.png "></a>
+        </div>
+        <div class="iconos"><a href="https://es-es.facebook.com/GitHub/"><img class="imagenes" id="a2"
+                                                                              src="imagenes/icono2.png "></a></div>
+        <div class="iconos"><a href="https://twitter.com/github?lang=ca"><img class="imagenes" id="a3"
+                                                                              src="imagenes/icono3.png "></a></div>
+    </div>
+    <div class="menu">
+        <div class="dropdown">
+            <a href="index.html" style="color: white">
+                <button class="dropbtn">Inicio</button>
+            </a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+            <a href="git.html">
+                <button class="dropbtn">Git</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="git.html#configuracion">Configuración</a>
+                <a href="git.html#gitInit">Git Init</a>
+                <a href="git.html#gitAdd">Git Add</a>
+                <a href="git.html#directoriosTrabajo">Directorios de trabajo</a>
+                <a href="git.html#gitBranch">Git Branch</a>
+                <a href="git.html#gitCheckout">Git Checkout</a>
+                <a href="git.html#gitFork">Git Fork</a>
+                <a href="git.html#gitClone">Git Clone</a>
+                <a href="git.html#gitPush">Git Push</a>
+                <a href="git.html#gitPull">Git Pull/Merge/Rebase</a>
+                <a href="git.html#gitReset">Undoing changes</a>
+                <a href="git.html#gitStatus">Estados y cambios</a>
+                <a href="git.html#gitDiff">Git Diff</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="gitHub.html">
+                <button class="dropbtn">GitEclipse</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="#eclipse">Eclipse</a>
+                <a href="#instalacion">Instalación</a>
+                <a href="#configuracion">Configuración</a>
+                <a href="#primerosPasos">Primeros pasos</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="tutoriales.html">
+                <button class="dropbtn">Tutoriales</button>
+            </a>
+            <div class="dropdown-content">
+                <a href="tutoriales.html#faciles">Primeros pasos</a>
+                <a href="tutoriales.html#medios">Nuestro primer proyecto</a>
+                <a href="tutoriales.html#dificiles">Github&Eclipse</a>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
- <div id='main' class="GitEclipse">
-  <h1>Git en Eclipse</h1>
-    <h2 id="eclipse">Un poco de información..¿Que es Eclipse?</h2>
-     <p> Para poder elaborar una aplicación es necesario utilizar una serie de herramientas que nos
-permitan escribirla, depurarla, traducirla y ejecutarla. Este conjunto de herramientas se
-conoce como entorno de desarrollo integrado, o IDE, y su función es proporcionar
-un marco de trabajo para el lenguaje de programación.</p>
-<p>La selección y una utilización óptima de los entornos de desarrollo será una
-decisión muy importante en el procedimiento de creación de software. El entorno de desarrollo
-es la herramienta con la cual el programador tendrá que trabajar durante
-la mayor parte de tiempo que dedique a la creación de nuevas aplicaciones. </p>
-<p>Una vez que se domine las facilidades que ofrezca el entorno, se podrá optimizar el tiempo
-de desarrollo de software y facilitar la obtención de un producto de calidad.</p>
-  <h2 id="instalacion">Instalación</h2>
-  <p>Primero debemos instalar el plugin de git en nuestro Eclipse.
-    Para ello debemos buscar el plugin en el marketplace de la página
-    de eclipse y seguir las instrucciones para añadirlo.
-    Para añadirlo simplemente debemos abrir en la parte superior el menú “help”
-    y seleccionar “install new software“. </p><img class="imagenes2" id="c0"  src="imagenes/1.png">
-  <p>Desde aquí debemos añadir el repositorio del marketplace que incluye los plugins.
-    Para ello debemos pulsar sobre el botón “Add” y añadir en la ventana que
-    aparece el siguiente repositorio. </p><img class="imagenes2" id="c1"  src="imagenes/2.png">
-  <p>A continuación nos aparecerán los plugins disponibles. Seleccionaremos el paquete
-    “Eclipse Git Team Provider” y pulsamos sobre next.</p><img class="imagenes2" id="c2"  src="imagenes/3.png">
-  <p>Se descargarán los archivos necesarios para poder usar Git desde nuestro eclipse.
-    Tras la descarga e instalación automática del plugin nos pedirá reiniciar Eclipse.
-    Lo reiniciamos y ya tenemos nuestro IDE listo para ser usado con Git</p><img class="imagenes2" id="c3"  src="imagenes/4.png">
-  <h2 id="configuracion">Configuración</h2>
-  <p>Una vez reiniciado Eclipse debemos conectarnos a nuestra cuenta de Git para empezar a utilizarlo. Para ello debemos seleccionar el menú “Window” y allí la opción Preferences.
-Una vez allí debemos situarnos en Preferences > Team > Git > Configuratio</p><img class="imagenes2" id="c4"  src="imagenes/5.png">
-  <p>Una vez allí seleccionamos “Add entry” y debemos introducir los valores
-    user.name y user.email para identificarnos </p><img class="imagenes2" id="c5"  src="imagenes/6.png"><img class="imagenes2" id="c6"  src="imagenes/7.png">
- <p>Una vez hechos estos pasos ya tenemos nuestro Eclipse listo para programar en
-   equipo y con control de versiones,
-   tanto para crear proyectos nuevos como para abrir los ya existentes. </p>
-
-   <h2  id="primerosPasos">Primeros pasos...</h2>
- <p>Abrimos Eclipse y creamos un nuevo Proyecto
-   web estático y lo llamaremos HTMLEclipse.</p><img class="imagenes2" id="c7"  src="imagenes/000.png">
-<p>Una vez creado, nos situamos encima de él,
-botón derecho, Team → Share Project ... Nos
-saldrá una ventana como la siguiente para
-configurar el Repositorio Git. Clickamos la casilla
-Use or create repository in parent folder
-or project y elegimos el proyecto que hemos creado
-anteriormente. Posteriormente, pulsamos
-el botón de Create Repository.</p><img class="imagenes2" id="c8"  src="imagenes/001.jpg"><img class="imagenes2" id="c9"  src="imagenes/002.jpg"><img class="imagenes2" id="c17" src="imagenes/003.jpg">
-<p>Una vez acabado lo anterior, nos dirigimos a la página oficial de git, y creamos un
-Repositorio nuevo. Pulsamos en el “+” y
-seleccionamos New repository.</p><img class=class="imagenes2" id="c10"  src="imagenes/004.jpg">
-<p>Le damos el nombre de How to. Lo creamos.</p><img class="imagenes2" id="c11"  src="imagenes/005.jpg">
-<p>Copiamos el enlace seleccionado en la siguiente
-imagen y nos dirigimos al Eclipse.</p><img class="imagenes2" id="12"  src="imagenes/006.jpg">
-<p>Arriba a la derecha
-encontraremos un icono para abrir otras perspectivas,
-lo pulsamos y
-seleccionamos la opción de Git. Haremos
-un commit inicial para iniciar el proyecto.
-Arrastramos un archivo aleatorio que encontremos
-en Unstaged Changes y lo arrastramos a
-Staged Changes. Una vez hecho esto, pulsamos el botón Commit.</p><img class="imagenes2" id="c13"  src="imagenes/007.jpg">
-<p>Una vez hecho esto, nos situamos encima del proyecto,
- botón derecho, Remote → Push ...
-Pegaremos el enlace anterior y pondremos nuestro usuario y contraseña. Pulsamos en
-Next> .</p><img class="imagenes2" id="c14"  src="imagenes/008.jpg">
-<p>Pulsamos en Source ref: y escogemos master. y
-Pulsamos en +Add Spec. Y finalizamos en
-el botón Finish.</p><img class="imagenes2" id="c15"  src="imagenes/009.jpg">
-<p>Una vez acabado esto, descargamos un git ignore para ignorar archivos innecesarios.
-Google → Git ignore Eclipse.
-Clickamos en la primera opción y descargamos el archivo.</p><img class="imagenes" id="c16"  src="imagenes/010.jpg">
-<p>Creamos un archivo .gitignore dentro de nuestro repositorio
-git y copiamos el archivo
-descargado.
-Cerramos Eclipse para que surtan efecto los cambios.</p>
-
+    <div id='main' class="GitEclipse">
+        <h1 style="font-size: 50px">Git en Eclipse</h1>
+        <br><br>
+        <h2 id="eclipse">Un poco de información..¿Que es Eclipse?</h2>
+        <br>
+        <p> Para poder elaborar una aplicación es necesario utilizar una serie de herramientas que nos
+            permitan escribirla, depurarla, traducirla y ejecutarla.
+            <br>
+            Este conjunto de herramientas se
+            conoce como entorno de desarrollo integrado, o IDE, y su función es proporcionar
+            un marco de trabajo para el lenguaje de programación.</p>
+        <p>La selección y una utilización óptima de los entornos de desarrollo será una
+            decisión muy importante en el procedimiento de creación de software.
+            <br>El entorno de desarrollo
+            es la herramienta con la cual el programador tendrá que trabajar durante
+            la mayor parte de tiempo que dedique a la creación de nuevas aplicaciones. </p>
+        <p>Una vez que se domine las facilidades que ofrezca el entorno, se podrá optimizar el tiempo
+            de desarrollo de software y facilitar la obtención de un producto de calidad.</p>
+        <br><br>
+        <h2 id="instalacion">Instalación</h2>
+        <br><br>
+        <p>Primero debemos instalar el plugin de git en nuestro Eclipse.
+            Para ello debemos buscar el plugin en el marketplace de la página
+            de eclipse y seguir las instrucciones para añadirlo.
+            <br>
+            Para añadirlo simplemente debemos abrir en la parte superior el menú “help”
+            y seleccionar “install new software“. </p>
+        <br><br>
+        <img class="imagenes2" id="c0" src="imagenes/1.png">
+        <br><br>
+        <p>Desde aquí debemos añadir el repositorio del marketplace que incluye los plugins.
+            Para ello debemos pulsar sobre el botón “Add” y añadir en la ventana que
+            aparece el siguiente repositorio. </p>
+        <br><br><img class="imagenes2" id="c1" src="imagenes/2.png"><br><br>
+        <p>A continuación nos aparecerán los plugins disponibles. Seleccionaremos el paquete
+            “Eclipse Git Team Provider” y pulsamos sobre next.</p>
+        <br><br>
+        <img class="imagenes2" id="c2" src="imagenes/3.png">
+        <br><br>
+        <p>Se descargarán los archivos necesarios para poder usar Git desde nuestro eclipse.
+            <br>
+            Tras la descarga e instalación automática del plugin nos pedirá reiniciar Eclipse.
+            <br>
+            Lo reiniciamos y ya tenemos nuestro IDE listo para ser usado con Git</p>
+        <br>
+        <img class="imagenes2" id="c3" src="imagenes/4.png">
+        <h2 id="configuracion">Configuración</h2>
+        <p>Una vez reiniciado Eclipse debemos conectarnos a nuestra cuenta de Git para empezar a utilizarlo.
+            <br>Para ellodebemos seleccionar el menú “Window” y allí la opción Preferences.
+            Una vez allí debemos situarnos en Preferences > Team > Git > Configuratio</p>
+        <br><br><img class="imagenes2" id="c4" src="imagenes/5.png">
+        <br><br>
+        <p>Una vez allí seleccionamos “Add entry” y debemos introducir los valores
+            user.name y user.email para identificarnos </p>
+        <br>
+        <img class="imagenes2" id="c5" src="imagenes/6.png">
+        <img class="imagenes2" id="c6" src="imagenes/7.png">
+        <br><br>
+        <p>Una vez hechos estos pasos ya tenemos nuestro Eclipse listo para programar en
+            equipo y con control de versiones,
+            tanto para crear proyectos nuevos como para abrir los ya existentes. </p>
+        <br><br>
+        <h2 id="primerosPasos">Primeros pasos...</h2>
+        <br><br>
+        <p>Abrimos Eclipse y creamos un nuevo Proyecto
+            web estático y lo llamaremos HTMLEclipse.</p>
+        <br>
+        <img class="imagenes2" id="c7" src="imagenes/000.png">
+        <br><br>
+        <p>Una vez creado, nos situamos encima de él,
+            botón derecho, Team → Share Project ... Nos
+            saldrá una ventana como la siguiente para
+            configurar el Repositorio Git.
+            <br>Clickamos la casilla
+            Use or create repository in parent folder
+            or project y elegimos el proyecto que hemos creado
+            anteriormente. Posteriormente, pulsamos
+            el botón de Create Repository.</p>
+        <br><img class="imagenes2" id="c8" src="imagenes/001.jpg"><img
+            class="imagenes2" id="c9" src="imagenes/002.jpg"><img class="imagenes2" id="c17" src="imagenes/003.jpg">
+        <br><br>
+        <p>Una vez acabado lo anterior, nos dirigimos a la página oficial de git, y creamos un
+            Repositorio nuevo. Pulsamos en el “+” y
+            seleccionamos New repository.</p>
+        <br>
+        <img class=class="imagenes2" id="c10" src="imagenes/004.jpg">
+        <br><br>
+        <p>Le damos el nombre de How to. Lo creamos.</p>
+        <br><br>
+        <img class="imagenes2" id="c11" src="imagenes/005.jpg">
+        <br><br>
+        <p>Copiamos el enlace seleccionado en la siguiente
+            imagen y nos dirigimos al Eclipse.</p>
+        <br>
+        <img class="imagenes2" id="12" src="imagenes/006.jpg">
+        <br><br>
+        <p>Arriba a la derecha
+            encontraremos un icono para abrir otras perspectivas,
+            lo pulsamos y
+            seleccionamos la opción de Git. <br>Haremos
+            un commit inicial para iniciar el proyecto.
+            Arrastramos un archivo aleatorio que encontremos
+            en Unstaged Changes y lo arrastramos a
+            Staged Changes. <br>Una vez hecho esto, pulsamos el botón Commit.</p>
+        <br><br>
+        <img class="imagenes2" id="c13" src="imagenes/007.jpg">
+        <br><br>
+        <p>Una vez hecho esto, nos situamos encima del proyecto,
+            botón derecho, Remote → Push ...
+            Pegaremos el enlace anterior y pondremos nuestro usuario y contraseña. Pulsamos en
+            Next> .</p>
+        <br><br>
+        <img class="imagenes2" id="c14" src="imagenes/008.jpg">
+        <br><br>
+        <p>Pulsamos en Source ref: y escogemos master. y
+            Pulsamos en +Add Spec. Y finalizamos en
+            el botón Finish.</p>
+        <br><br>
+        <img class="imagenes2" id="c15" src="imagenes/009.jpg">
+        <br><br>
+        <p>Una vez acabado esto, descargamos un git ignore para ignorar archivos innecesarios.
+            Google → Git ignore Eclipse.<br>
+            Clickamos en la primera opción y descargamos el archivo.</p>
+        <br>
+        <img class="imagenes" id="c16" src="imagenes/010.jpg">
+        <br><br>
+        <p>Creamos un archivo .gitignore dentro de nuestro repositorio
+            git y copiamos el archivo
+            descargado.
+            Cerramos Eclipse para que surtan efecto los cambios.</p>
     </div>
-    </main>
+</main>
 <footer>
-  <p>  Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
+    <p> Esta pagina esta realizada por &copy Marco Perez & Jose Coca</p>
 </footer>
 </body>
 </html>
