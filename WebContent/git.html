@@ -9,9 +9,12 @@
 </head>
 <body>
 <header>
-<div class="imagenPortada">
-<img src="imagenes/portada.png " width="50%" >
-</div>
+  <div class="imagenPortada">
+  <img class="imagenes" id="a0"  src="imagenes/portada.png " width="50%" >
+  <div  class="iconos"><a href="https://github.com/"><img class="imagenes" id="a1"  src="imagenes/icono1.png "></a></div>
+  <div  class="iconos"><a href="https://es-es.facebook.com/GitHub/"><img class="imagenes" id="a2"  src="imagenes/icono2.png "></a></div>
+  <div  class="iconos"><a href="https://twitter.com/github?lang=ca"><img class="imagenes" id="a3"  src="imagenes/icono3.png "></a></div>
+  </div>
 <div class="menu">
 <div class="dropdown">
   <a href="index.html"><button class="dropbtn">Inicio</button></a>
@@ -97,7 +100,7 @@
 			<p><code class="directorio">Index</code> La zona intermedia.</p>
 			<p><code class="directorio">Head</code> Apunta al último commit que hemos realizado.</p>
 			<p>Aquí un dibujo para aclarar esta información:</p>
-                <a href="https://git-scm.com/book/es/v1/Empezando-Fundamentos-de-Git#Los-tres-estados"><img src="imagenes/flujoTrabajo.png"></a></a></div>
+                <a href="https://git-scm.com/book/es/v1/Empezando-Fundamentos-de-Git#Los-tres-estados"><img class="imagenes" id="b0" src="imagenes/flujoTrabajo.png"></a></a></div>
 
 		<div class="git" id="gitBranch">
 			<a name="git_branch">
@@ -154,7 +157,7 @@
 			<p><a href="https://www.atlassian.com/git/tutorials/syncing/git-pull"><code class="comando">git pull</code></a></p>
 			<p>Una vez realizada ésta actualización, fusionaremos las ramas con:</p>
 			<p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge"><code class="comando">git merge [nombre_rama]</code></a></p>
-            <img src="imagenes/branches.png">
+            <img class="imagenes" id="b1" src="imagenes/branches.png">
 			<p>Para combinar varios commits en uno mismo y por tanto permitir que el usuario</p>
 			<p>reescriba el historial de commits antes de hacer un push de los cambios, usaremos:</p>
 			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase">git rebase</a></code></p>
@@ -165,10 +168,10 @@
 		<a name="git_reset">
 			<h1>Git Reset y Git Revert. Deshacer cambios</h1>
 			<p>Cuando queramos descartar commits en una rama privada o descartar cambios no deseados, usaremos: </p>
-			<p><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-reset"><code class="comando">git reset[commit]</code></a></p><img src="imagenes/reset.png">
+			<p><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-reset"><code class="comando">git reset[commit]</code></a></p><img class="imagenes" id="b2"  src="imagenes/reset.png">
 			<p>Si lo que queremos es deshacer un commit en una rama pública, usaremos:</p>
 			<p><code class="comando"><a href="https://www.atlassian.com/git/tutorials/undoing-changes#git-revert">git revert[commit]</a></code></p>
-            <img src="imagenes/revert.png">
+            <img class="imagenes" id="b3"  src="imagenes/revert.png">
 		</a>
 		</div>
 

@@ -1,12 +1,13 @@
 @CHARSET "UTF-8";
 *{margin: 0;
  padding: 0;}
+ html{
+   background-color: black;
+ }
 body{
-
 
 }
 header{
-
 
 }
 div.iconos{
@@ -21,14 +22,8 @@ div.iconos:hover{
     transform: rotate(360deg);
 }
 
-
-
-
 div.iconos img{width: 32px;
     height: 32px;
-
-
-
 }
 
 div.imagenPortada {
@@ -36,6 +31,10 @@ div.imagenPortada {
 }
 div.menu{
     background-color: black;
+    height: 75px;
+    width: 700px;
+    margin:0 auto;
+
 }
 button {
     display: block;
@@ -46,9 +45,9 @@ button {
     font-family: 'Pacifico', cursive;
     letter-spacing:2px;
     margin:0px 30px;
+    height: 73px;
 
 }
-
 
 .dropbtn {
     background-color: black;
@@ -99,8 +98,6 @@ button {
     background-color:  #FF6347;
 }
 
-
-
 button a{
 	color:white;
 	text-decoration: none;
@@ -113,8 +110,20 @@ button a{
 }
 iframe{
     flex-direction: row;
-    padding: 5em;
-    width: 1000px;
+    width:1280px;
+    height:720px;
+}
+#centrar{
+
+  width:1300px;
+  margin:0 auto;
+
+
+}
+
+#facil, #medios, #dificiles{
+
+margin-top: 40px;
 
 
 }
@@ -123,12 +132,24 @@ main{
 
 	width:100%;
 
+
 }
+
+.imagenes{
+  width:900px;
+
+}
+#a0{
+width:50%;
+
+}
+
+
 .Inicio h1{
   font-size: 50px;
   color:grey;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 25px;
 }
 .Inicio p{
