@@ -150,6 +150,12 @@ main {
 #a0 {
     width: 50%;
 }
+#b2{
+    padding-bottom: 40px;
+}
+#b3{
+    padding-top:40px;
+}
 
 .Inicio h1 {
     font-size: 50px;
@@ -189,6 +195,23 @@ a:link, a:visited {
 
 .git {
     margin-top: 2%;
+}
+code.comando{
+	color:white;
+	font-size:20px;
+	background-color:black; 
+	border-radius:5px;
+	padding: 5px 15px;
+    padding-top:2px;
+}
+
+code.directorio{
+	color:black;
+	font-size:20px;
+	background-color:white;
+	border-radius:1px;
+	padding: 5px 15px;
+    padding-top:1px;
 }
 
 #configuracion {
